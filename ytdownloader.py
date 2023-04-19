@@ -15,3 +15,4 @@ except Exception as e:
 
 #to run the program do this:
     #got into terminal and type python3 ytdownloader.py "(paste the url of the video here)"
+#only downloads certain vids. need to change this!
