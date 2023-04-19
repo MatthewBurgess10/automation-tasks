@@ -1,1 +1,0 @@
-#this program is for a youtube vid downloader
