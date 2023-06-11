@@ -1,13 +1,23 @@
 #this file is for a program that moves the mouse around automatically
-import pyautogui
-import sys
-import keyboard
+from pynput.mouse import Button, Controller
+import time
+import random
 
+
+mouse = Controller()
 run = True
 
+mouse.position = 100, 100
 while run == True:
-    pyautogui.move(200, 200)
-    pyautogui.move(None, 300)
-    if keyboard.is_pressed('Esc'):
-        sys.exit(0)
-        
+    x1 = random.randint(50, 700)
+    y1 = random.randint(50, 700)
+    mouse.move(x1, y1)
+    time.sleep(1)
+    x2 = random.randint(50, 700)
+    y2 = random.randint(50, 700)
+    mouse.move(x2, y2)
+    time.sleep(1)
+    
+#to stop the script click control + c
+         
+
