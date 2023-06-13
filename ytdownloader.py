@@ -8,11 +8,10 @@ try:
     print("Title: ", yt.title)
     print("View: ", yt.views)
     yd = yt.streams.get_highest_resolution()
-    yd.download('/Users/Matthew/Downloads/YT vid downloads')
+    yd.download('Your file path')
 except Exception as e:
     print("An error occurred:", e)
 
 
 #to run the program do this:
     #got into terminal and type python3 ytdownloader.py "(paste the url of the video here)"
-#only downloads certain vids. need to change this!
